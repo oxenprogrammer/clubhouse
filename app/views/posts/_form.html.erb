@@ -1,5 +1,5 @@
-<%= form_with(model: post) do |form| %>
-  <% if post.errors.any? %>
+<%= form_with(model: @post) do |form| %>
+  <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
