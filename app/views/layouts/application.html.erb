@@ -21,8 +21,10 @@
 		<nav
 			class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
 		>
+			<%= link_to root_path, class: "navbar" do %>
 			<a class="navbar-brand" href="#">Club House</a>
-			<button
+			<% end %>
+			<button 
 				class="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
@@ -39,10 +41,10 @@
 			>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Login</a>
+						<%= link_to "Login",  new_user_session_path, class: "nav-link" %>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Sign Up</a>
+						<%= link_to "Sign Up",  new_user_registration_path, class: "nav-link" %>
 					</li>
 				</ul>
 			</div>
