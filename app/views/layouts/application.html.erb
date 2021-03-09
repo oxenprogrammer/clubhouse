@@ -11,8 +11,10 @@
 		'data-turbolinks-track': 'reload' %> <%=
 		javascript_pack_tag 'application',
 		'data-turbolinks-track': 'reload' %>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css" />
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css"
+		/>
 	</head>
 
 	<body>
@@ -45,15 +47,15 @@
 				</ul>
 			</div>
 		</nav>
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
 		<%= yield %>
 		<!-- Footer -->
 		<footer class="page-footer font-small blue pt-4">
 			<!-- Copyright -->
 			<div class="footer-copyright text-center py-3">
 				© 2020 Copyright:
-				<a href="">
-					emmisteel</a
-				>
+				<a href=""> emmisteel</a>
 			</div>
 			<!-- Copyright -->
 		</footer>

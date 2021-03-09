@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Authenication
+gem 'devise', '~> 4.7', '>= 4.7.3'
+
 group :development, :test do
   # use sqlite3 as the database for ActiveRecords
   gem 'sqlite3', '~> 1.4', '>= 1.4.2'
