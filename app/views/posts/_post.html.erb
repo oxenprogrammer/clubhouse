@@ -1,6 +1,10 @@
 <div class="posts">
   <% @posts.each do |post| %>
-  <tr>
+  <div class="card">
+    <div class="card-title"><%= post.title %></div>
+    <div class="card-text"><%= post.content %></div>
+  </div>
+  <!-- <tr>
     <td><%= post.title %></td>
     <td><%= post.content %></td>
     <td><%= post.user_id %></td>
@@ -12,6 +16,6 @@
       <%= link_to 'Destroy', post, method: :delete,
       data: { confirm: 'Are you sure?' } %>
     </td>
-  </tr>
+  </tr> -->
   <% end %>
 </div>
