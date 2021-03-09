@@ -61,11 +61,8 @@
 				</ul>
 			</div>
 		</nav>
-		<% if flash[:notice] %>
-		<p class="notice"><%= notice %></p>
-		<% end %> <% if flash[:alert] %>
-		<p class="alert"><%= alert %></p>
-		<% end %> <%= yield %>
+		<%= render "posts/notification" %>
+		<%= yield %>
 		<!-- Footer -->
 		<footer
 			class="page-footer font-small blue pt-4 fixed-bottom"
