@@ -3,19 +3,9 @@
   <div class="card">
     <div class="card-title"><%= post.title %></div>
     <div class="card-text"><%= post.content %></div>
+    <% if user_signed_in? %>
+      <div class="card-subtitle text-muted"><%= post.user.username %></div>
+    <% end %>
   </div>
-  <!-- <tr>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= post.user_id %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td>
-      <%= link_to 'Edit', edit_post_path(post) %>
-    </td>
-    <td>
-      <%= link_to 'Destroy', post, method: :delete,
-      data: { confirm: 'Are you sure?' } %>
-    </td>
-  </tr> -->
   <% end %>
 </div>
