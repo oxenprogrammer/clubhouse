@@ -1,4 +1,7 @@
-<h2>Log in</h2>
+<div class="container" style="display: flex;">
+  <div class="card pt-4 mx-auto" style="width: 18rem; margin-top: 6rem">
+  <div class="card-content mx-auto">
+  <h6><strong>Log in</strong></h6>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -24,3 +27,7 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+  </div> 
+  </div>
+</div>
