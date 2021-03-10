@@ -1,11 +1,12 @@
 <div class="posts">
   <% @posts.each do |post| %>
-  <div class="card">
-    <div class="card-title"><%= post.title %></div>
-    <div class="card-text"><%= post.content %></div>
+  <div class="post">
+    <div class="h3 p-2"><%= post.title %></div>
+    <p class="p-4 h6"><%= post.content %></p>
     <% if user_signed_in? %>
-      <div class="card-subtitle text-muted"><%= post.user.username %></div>
+      <div class="card-subtitle p-2">Author: <span class="text-muted"><%= post.user.username %></span></div>
     <% end %>
   </div>
+  <hr>
   <% end %>
 </div>

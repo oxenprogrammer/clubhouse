@@ -11,9 +11,7 @@
 - Devise for Authntication
 - Bootstrap 5
 
-## Live Demo
-
-[Deployed app]()
+## Screen Shot
 
 
 ## Getting Started

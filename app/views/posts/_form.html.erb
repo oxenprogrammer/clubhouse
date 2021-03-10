@@ -1,5 +1,5 @@
 <div class="container" style="display: flex;">
-  <div class="card pt-4 mx-auto" style="width: 18rem; margin-top: 6rem">
+  <div class="card pt-4 mx-auto" style="width: 36rem; margin-top: 6rem">
   <div class="card-content mx-auto">
   <%= form_with(model: @post) do |form| %>
     <% if @post.errors.any? %>
@@ -19,7 +19,7 @@
     </div>
   
     <div class="field">
-      <%= form.text_area :content, placeholder: "50 to 500 Characters ..." %>
+      <%= form.text_area :content, placeholder: "50 to 500 Characters ...", style: "width: 24rem; height: 18rem" %>
     </div>
   
     <div class="actions">
