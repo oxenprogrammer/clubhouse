@@ -12,7 +12,7 @@
 - Bootstrap 5
 
 ## Screen Shot
-
+![screenshot](./clubhouse.png)
 
 ## Getting Started
 
