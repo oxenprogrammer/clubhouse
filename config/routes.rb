@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => {registrations: 'registrations'}
-  resources :posts, only: %i[new create index show]
+  resources :posts, only: %i[new create index]
   resources :users, only: %i[new create index]
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'

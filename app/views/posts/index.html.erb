@@ -1,12 +1,8 @@
 <div class="container mt-4">
 	<div class="row main">
 		<div class="left col-md-6 d-none d-md-block">
-			<% if user_signed_in? %>
-				<%= render "profile" %>
-			<% else %>
-			<%= image_tag ("raggae.jpeg"), class:
-			"img-responsive"%>
-			<% end %>
+			<%= show_profile %>
+			<%= show_image %>
 		</div>
 		<div class="right col-md-6">
 			<p id="notice"><%= notice %></p>

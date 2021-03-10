@@ -37,40 +37,22 @@
 				id="navbarNavDropdown"
 			>
 				<ul class="navbar-nav ml-auto">
-					<% if user_signed_in? %>
 					<li class="nav-item">
-						<%= link_to current_user.username, edit_user_registration_path, class: "nav-link" %>
+						<%= navbar_link_name(current_user) %>
 					</li>
 					<li class="nav-item">
-						<%= link_to "Logout", destroy_user_session_path,
-						method: :delete, class: "nav-link" %>
-					</li>
-					<% else %>
-					<li class="nav-item">
-						<%= link_to "Login", new_user_session_path,
-						class: "nav-link" %>
+						<%= navbar_link_logout %>
 					</li>
 					<li class="nav-item">
-						<%= link_to "Sign Up",
-						new_user_registration_path, class: "nav-link" %>
+						<%= navbar_link_login %>
 					</li>
-					<% end %>
+					<li class="nav-item">
+						<%= navbar_link_sign_up %>
+					</li>
 				</ul>
 			</div>
 		</nav>
 		<%= render "posts/notification" %>
 		<%= yield %>
-		<!-- Footer -->
-		<footer
-			class="page-footer font-small blue pt-4 fixed-bottom"
-		>
-			<!-- Copyright -->
-			<div class="footer-copyright text-center py-3">
-				© 2021 Copyright:
-				<a href=""> emmisteel</a>
-			</div>
-			<!-- Copyright -->
-		</footer>
-		<!-- Footer -->
 	</body>
 </html>
