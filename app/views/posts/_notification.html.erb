@@ -1,5 +1,11 @@
 <% if flash[:notice] %>
-<p class="notice"><%= notice %></p>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Yes!!! . . .</strong> <%= notice %>.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 <% end %> <% if flash[:alert] %>
-<p class="alert"><%= alert %></p>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Oh dear . . .</strong> <%= alert %>.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 <% end %>
