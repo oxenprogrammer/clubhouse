@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **George Gbenle**
+👤 **Emanuel Okello**
 
 - GitHub: [oxenprogrammer](https://github.com/oxenprogrammer)
 - Twitter: [@ox_emmy](https://twitter.com/ox_emmy)
