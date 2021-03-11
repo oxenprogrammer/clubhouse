@@ -1,0 +1,14 @@
+<div class="container mt-4">
+	<div class="row main">
+		<div class="left col-md-6 d-none d-md-block">
+			<%= show_profile %>
+			<%= show_image %>
+		</div>
+		<div class="right col-md-6">
+			<div class="new-post">
+				<%= link_to 'New Post', new_post_path %>
+			</div>
+			<%= render "post" %>
+		</div>
+	</div>
+</div>
