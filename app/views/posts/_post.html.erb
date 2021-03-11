@@ -3,7 +3,7 @@
   <div class="post">
     <div class="h3 p-2"><%= post.title %></div>
     <p class="p-4 h6"><%= post.content %></p>
-    <div class="card-subtitle p-2"><span class="text-muted"><%= show_author(User.find(post.user_id)) %></span></div>
+    <div class="card-subtitle p-2"><span class="text-muted"><%= show_author(User.find_by("id")) %></span></div>
   </div>
   <hr>
   <% end %>
