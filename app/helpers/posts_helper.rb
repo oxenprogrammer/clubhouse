@@ -10,4 +10,12 @@ module PostsHelper
   def show_image
     image_tag 'raggae.jpeg', class: 'img-responsive' unless user_signed_in?
   end
+
+  def show_flash_notice
+    flash[:notice] ? notice : ''
+  end
+
+  def show_flash_alert
+    flash[:alert] ? alert : ''
+  end
 end
