@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-img-top">
+    <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.username) %>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= current_user.username %></h5>
+    <a href="#" class="btn btn-primary text-white">Number of Post: <%= current_user.posts.count %></a>
+  </div>
+</div>
